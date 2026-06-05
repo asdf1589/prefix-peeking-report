@@ -1,0 +1,96 @@
+\relax 
+\citation{jenga2025}
+\citation{kwon2023efficient}
+\citation{kwon2023efficient}
+\citation{jenga2025}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}{}{section.1}{}}
+\citation{jenga2025}
+\citation{jenga2025}
+\citation{jenga2025}
+\citation{jenga2025}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background}{2}{}\protected@file@percent }
+\newlabel{sec:bg}{{II}{2}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Jenga: Heterogeneous KV Cache Management}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}vLLM Prefix Caching}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}The Pool-Size-to-Article-Size Ratio}{2}{}\protected@file@percent }
+\newlabel{sec:rho}{{\mbox  {II-C}}{2}{}{subsection.2.3}{}}
+\newlabel{eq:rho}{{1}{2}{}{equation.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Prefix Peeking Eviction}{2}{}\protected@file@percent }
+\newlabel{sec:ppe}{{III}{2}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Mechanism}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Budget Cap}{2}{}\protected@file@percent }
+\newlabel{eq:budget}{{2}{2}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Pool-Size Auto-Disable}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Correctness}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Prefix Peeking Scheduling}{3}{}\protected@file@percent }
+\newlabel{sec:pps}{{IV}{3}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Mechanism}{3}{}\protected@file@percent }
+\newlabel{eq:sortkey}{{3}{3}{}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Anti-Starvation}{3}{}\protected@file@percent }
+\newlabel{sec:antistarvation}{{\mbox  {IV-B}}{3}{}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Read-Only Prefix Estimation}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Interaction with Preemption}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Complementarity with \textsc  {PPE}}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Evaluation}{3}{}\protected@file@percent }
+\newlabel{sec:eval}{{V}{3}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Setup}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Closed-Loop Throughput}{3}{}\protected@file@percent }
+\newlabel{sec:closed}{{\mbox  {V-B}}{3}{}{subsection.5.2}{}}
+\citation{yu2022orca}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Closed-loop throughput across models and workloads. (a) Three shared-prefix workloads; (b) MMLU-pro control (no shared prefix). All four policies lie within $\pm 0.6\%$ of each other in~(b), confirming zero regression.}}{4}{}\protected@file@percent }
+\newlabel{fig:bar}{{1}{4}{}{figure.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Gemma-3-4B-IT — arXiv QA (90k avg.\ context, $\rho \approx 5$). Values are mean\,$\pm $\,std; $n$ = number of independent runs.}}{4}{}\protected@file@percent }
+\newlabel{tab:gemma}{{I}{4}{}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Ministral-8B FP8 — arXiv QA (32k avg.\ context, $\rho \approx 2$). Single run ($n=1$); variance data pending.}}{4}{}\protected@file@percent }
+\newlabel{tab:ministral}{{II}{4}{}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Llama-3.1-8B — arXiv QA (50k avg.\ context, $\rho \approx 1.1$). \textsc  {PPE}\ auto-disabled ($\rho <\rho _{\min }$). Mean\,$\pm $\,std; $n$ per policy shown.}}{4}{}\protected@file@percent }
+\newlabel{tab:llama}{{III}{4}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Rate Sweep}{4}{}\protected@file@percent }
+\newlabel{sec:ratesweep}{{\mbox  {V-C}}{4}{}{subsection.5.3}{}}
+\citation{kwon2023efficient}
+\citation{yu2022orca}
+\citation{agrawal2024sarathi}
+\citation{dao2022flashattention}
+\citation{zhong2024distserve}
+\citation{zheng2023sglang}
+\citation{ye2024chunkattention}
+\citation{juravsky2024hydragen}
+\citation{qin2024mooncake}
+\citation{hu2024memserve}
+\citation{yao2024cacheblend}
+\citation{gim2024infinigen}
+\citation{shi2024preble}
+\citation{zheng2024batchllm}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Llama-3.1-8B — MMLU-pro (4k context, no shared prefix). Control: all policies within $\pm 0.6\%$. LRU: $n=2$ (12.470\,$\pm $\,.003); others: $n=1$.}}{5}{}\protected@file@percent }
+\newlabel{tab:mmlu}{{IV}{5}{}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Gemma-3-4B-IT — Poisson rate sweep (0.2--4.0\,req/s, arXiv QA 90k context, $n=1$ per rate point). Both = \textsc  {PPE}{}+\textsc  {PPS}\ combined; PPE-only and PPS-only curves are pending additional experiments. (a)~End-to-end latency; (b)~TTFT; (c)~TPOT.}}{5}{}\protected@file@percent }
+\newlabel{fig:ratesweep}{{2}{5}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Discussion}{5}{}\protected@file@percent }
+\newlabel{sec:discussion}{{\mbox  {V-D}}{5}{}{subsection.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Limitations}{5}{}\protected@file@percent }
+\newlabel{sec:limitations}{{\mbox  {V-E}}{5}{}{subsection.5.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Related Work}{5}{}\protected@file@percent }
+\newlabel{sec:related}{{VI}{5}{}{section.6}{}}
+\citation{jenga2025}
+\citation{jenga2025}
+\bibstyle{IEEEtran}
+\bibcite{jenga2025}{1}
+\bibcite{kwon2023efficient}{2}
+\bibcite{yu2022orca}{3}
+\bibcite{agrawal2024sarathi}{4}
+\bibcite{dao2022flashattention}{5}
+\bibcite{zhong2024distserve}{6}
+\bibcite{zheng2023sglang}{7}
+\bibcite{ye2024chunkattention}{8}
+\bibcite{juravsky2024hydragen}{9}
+\bibcite{qin2024mooncake}{10}
+\bibcite{hu2024memserve}{11}
+\bibcite{yao2024cacheblend}{12}
+\bibcite{shi2024preble}{13}
+\bibcite{gim2024infinigen}{14}
+\bibcite{zheng2024batchllm}{15}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{6}{}\protected@file@percent }
+\newlabel{sec:conc}{{VII}{6}{}{section.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{6}{}\protected@file@percent }
+\gdef \@abspage@last{6}
